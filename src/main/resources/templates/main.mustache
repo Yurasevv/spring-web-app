@@ -4,12 +4,11 @@
     <title>G</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
-    <title></title>
-</head>
+
 <body>
 <div>
     <div>
-        <form method="post" action="/">
+        <form method="post">
             <input type="text" name="text" placeholder="text" >
             <input type="text" name="tag" placeholder="tag">
             <button type="submit">Add</button>
@@ -23,13 +22,15 @@
     </form>
 
     <div>Messages</div>
-    {{#messages}}
+    <div>
+        {{#messages}}
         <div>
             <b>{{id}}</b>
             <span>{{text}}</span>
             <i>{{tag}}</i>
         </div>
-    {{/messages}}
+         {{/messages}}
+    </div>
 </div>
 </body>
 </html>
