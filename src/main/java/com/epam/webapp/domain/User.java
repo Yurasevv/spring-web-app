@@ -21,7 +21,7 @@ public class User {
     public User() {
     }
 
-    public User(Long id, String userName, String password, boolean active, Set<Role> roles) {
+    public User(Long id, String username, String password, boolean active, Set<Role> roles) {
         this.id = id;
         this.username = username;
         this.password = password;
@@ -41,7 +41,7 @@ public class User {
         return username;
     }
 
-    public void setUsername(String userName) {
+    public void setUsername(String username) {
         this.username = username;
     }
 
